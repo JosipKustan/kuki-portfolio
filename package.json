@@ -2,7 +2,7 @@
   "name": "kuki-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://josipkustan.github.io",
+  "homepage": "http://josipkustan.github.io/kuki-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
