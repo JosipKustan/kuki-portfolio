@@ -54,6 +54,11 @@ body {
   opacity: 0;
   z-index: 1;
 }
+.footer {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+}
 .fade-appear.fade-appear-active {
   opacity: 1;
   transition: opacity 1000ms linear;

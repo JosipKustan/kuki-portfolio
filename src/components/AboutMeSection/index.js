@@ -16,8 +16,10 @@ const AboutMeComponent = () => {
         <AboutMeImage />
         <SectionParagraf>
           {" "}
-          I am a passionate amature maker of things and Software Engineer
-          student!{" "}
+          I am a passionate amateur maker of fantasy and realistic models and
+          miniatures. I also study Software Engineering! This Website is not
+          only show of my artistic skills but my software engineering skills
+          too!{" "}
         </SectionParagraf>
       </DivWrapper>
     </SectionContainer>

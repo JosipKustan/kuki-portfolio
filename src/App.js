@@ -22,6 +22,9 @@ function App() {
       <AboutMe />
       <ContactMe />
       <ParallaxBackground />
+      <motion.div className="footer">
+        This Website is still in development.
+      </motion.div>
     </Router>
   );
 }
