@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 import { Button } from "../ButtonElements";
 import MyWorkArrowComponent from "../ArrowElement/index";
 import {
@@ -14,7 +14,6 @@ import {
   ArrowRight,
 } from "./HeroSectionElements";
 import Video from "../../videos/webreel_medium.mp4";
-import { motion } from "framer-motion";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);

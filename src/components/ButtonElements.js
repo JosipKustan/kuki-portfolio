@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
 export const Button = styled(Link)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#00000A" : "#00A0e3")};

@@ -21,8 +21,6 @@ function App() {
   );
 }
 
-const off_set_y = 1.2;
-
 const max = 0.9;
 const min = 0.5;
 const max2 = 0.3;
@@ -37,9 +35,8 @@ function getRandomOffset() {
 export default App;
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
+  const { innerHeight: height } = window;
   return {
-    width,
     height,
   };
 }
@@ -62,7 +59,7 @@ export function useWindowDimensions() {
 }
 
 function ParallaxBackground() {
-  const { height, width } = useWindowDimensions();
+  const { height } = useWindowDimensions();
   const { scrollY } = useViewportScroll();
   const y1 = useTransform(
     scrollY,
@@ -94,29 +91,45 @@ function ParallaxBackground() {
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
-  console.log(height);
-  console.log(width);
 
   return (
     <>
       <div className="bodyDiv">
         <motion.div className="box" style={{ y: y1, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954462/LadyVLineArt_0002_-ShipOuter_yebwgq.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954462/LadyVLineArt_0002_-ShipOuter_yebwgq.png"
+          ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y2, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0001_ShipInner_akdkfd.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0001_ShipInner_akdkfd.png"
+          ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y3, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0003_ShipMasts_ocrl7d.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0003_ShipMasts_ocrl7d.png"
+          ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y4, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0000_ShipSailsFront_zys3iq.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0000_ShipSailsFront_zys3iq.png"
+          ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y5, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0004_ShipSailsBack_qjb8tv.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0004_ShipSailsBack_qjb8tv.png"
+          ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y6, x: 0 }}>
-          <img src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0005_LadyV_u2pn5w.png"></img>
+          <img
+            alt="LadyV"
+            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0005_LadyV_u2pn5w.png"
+          ></img>
         </motion.div>
       </div>
     </>

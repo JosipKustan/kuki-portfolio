@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 //installed react-icons
-import { FaBars, FaWindows } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavBarContainer,
