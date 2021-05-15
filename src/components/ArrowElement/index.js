@@ -9,7 +9,7 @@ const MyWorkArrowComponent = () => {
       <MyWorkArrow
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 3, duration: 0.14 }}
+        transition={{ delay: 0.8, duration: 0.14 }}
       >
         <Arrow>
           <img

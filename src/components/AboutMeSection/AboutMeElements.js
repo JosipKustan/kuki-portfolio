@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const SectionContainer = styled.div`
   display: flex;
@@ -9,6 +10,22 @@ export const SectionContainer = styled.div`
   padding-bottom: 4vh;
   align-items: center;
   height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+`;
+export const DivWrapper = styled(motion.div)`
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  align-items: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -31,9 +48,10 @@ export const SectionTitle = styled.h1`
 `;
 
 export const AboutMeImage = styled.img`
-  height: 430px;
-  mix-blend-mode: normal;
-  width: 300px;
+  height: 330px;
+  width: 200px;
+  background-image: url(https://res.cloudinary.com/josip-kuki/image/upload/v1621066406/myFace_uefskw.png);
+  background-size: cover;
 `;
 
 export const SectionParagraf = styled.p`

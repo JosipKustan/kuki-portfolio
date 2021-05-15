@@ -7,7 +7,12 @@ import Work from "./pages/Work";
 import { useState, useEffect } from "react";
 import AboutMe from "./pages/AboutMe";
 import ContactMe from "./pages/ContactMe";
-import { useViewportScroll, motion, useTransform } from "framer-motion";
+import {
+  useViewportScroll,
+  motion,
+  useTransform,
+  useSpring,
+} from "framer-motion";
 
 function App() {
   return (
@@ -21,6 +26,7 @@ function App() {
   );
 }
 
+/*Background Parallax effect paramiters*/
 const max = 0.9;
 const min = 0.5;
 const max2 = 0.3;
@@ -61,6 +67,7 @@ export function useWindowDimensions() {
 function ParallaxBackground() {
   const { height } = useWindowDimensions();
   const { scrollY } = useViewportScroll();
+
   const y1 = useTransform(
     scrollY,
     [height * getRandom(), height * 3],
