@@ -24,19 +24,24 @@ const images = [
     original: `https://res.cloudinary.com/josip-kuki/image/upload/${cloudinaryImgProps}/v1618090216/RastovacPainting_vcl9qe.webp`,
     thumbnail:
       "https://res.cloudinary.com/josip-kuki/image/upload/v1618090214/RastovacPainting_thumbnail_viojql.jpg",
+    originalTitle: "Painting of my small village called 'Rastovac'",
+    originalAlt: "Traditional art",
   },
 
   {
     original: `https://res.cloudinary.com/josip-kuki/image/upload/${cloudinaryImgProps}/v1618090218/Mushroom3_fv8dro.webp`,
     thumbnail:
       "https://res.cloudinary.com/josip-kuki/image/upload/c_thumb,w_200,g_face/v1618090218/Mushroom3_fv8dro.jpg",
+    originalTitle: "Mushroom Heaven",
+    originalAlt: "Mushroom Diorama",
+    // description: "This was a commision work for Matea",
   },
 ];
 
 const WorkConteinerComponent = () => {
   return (
     <WorkConteiner id="work_page">
-      <ImageGallery items={images} />
+      <ImageGallery items={images} disableThumbnailScroll="true" />
     </WorkConteiner>
   );
 };

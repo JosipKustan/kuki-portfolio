@@ -10,6 +10,7 @@ import ContactMe from "./pages/ContactMe";
 import {
   useViewportScroll,
   motion,
+  useMotionValue,
   useTransform,
   useSpring,
 } from "framer-motion";
@@ -28,6 +29,7 @@ function App() {
     </Router>
   );
 }
+export default App;
 
 /*Background Parallax effect paramiters*/
 const max = 0.9;
@@ -40,8 +42,6 @@ function getRandom() {
 function getRandomOffset() {
   return 1 + Math.random() * (max2 - min2) + min2;
 }
-
-export default App;
 
 function getWindowDimensions() {
   const { innerHeight: height } = window;
@@ -70,34 +70,45 @@ export function useWindowDimensions() {
 function ParallaxBackground() {
   const { height } = useWindowDimensions();
   const { scrollY } = useViewportScroll();
+  const motionVal = useMotionValue(0);
+  const springY = useSpring(scrollY, { bounce: 0.6, mass: 0.2, damping: 5.2 });
+
+  console.log("motionValue");
+  console.log(motionVal);
+  onscroll = () => {
+    // console.log("viewport scroll");
+    // console.log(scrollY);
+    // console.log("useSpring");
+    // console.log(springY);
+  };
 
   const y1 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
   const y2 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
   const y3 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
   const y4 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
   const y5 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
   const y6 = useTransform(
-    scrollY,
+    springY,
     [height * getRandom(), height * 3],
     [-(height * getRandomOffset()), 0]
   );
