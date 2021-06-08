@@ -5,6 +5,7 @@ import MyWorkArrowComponent from "../ArrowElement/index";
 import {
   HeroContainer,
   HeroBg,
+  VideoBgMobile,
   VideoBg,
   HeroContent,
   HeroH1,
@@ -13,7 +14,8 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroSectionElements";
-import Video from "../../videos/webreel_medium.mp4";
+import VideoDesktop from "../../videos/webreel_medium.mp4";
+import VideoMobile from "../../videos/WeebReelMobile.mp4";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -25,7 +27,8 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home_page">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg autoPlay loop muted src={VideoDesktop} type="video/mp4" />
+        <VideoBgMobile autoPlay loop muted src={VideoMobile} type="video/mp4" />
       </HeroBg>
 
       <HeroContent>
