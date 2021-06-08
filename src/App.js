@@ -102,43 +102,44 @@ function ParallaxBackground() {
     [-(height * getRandomOffset()), 0]
   );
 
+  const imageOptimisation = "c_scale,q_39:420,w_1300";
   return (
     <>
       <div className="bodyDiv">
         <motion.div className="box" style={{ y: y1, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954462/LadyVLineArt_0002_-ShipOuter_yebwgq.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954462/LadyVLineArt_0002_-ShipOuter_yebwgq.webp`}
           ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y2, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0001_ShipInner_akdkfd.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954461/LadyVLineArt_0001_ShipInner_akdkfd.webp`}
           ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y3, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0003_ShipMasts_ocrl7d.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954461/LadyVLineArt_0003_ShipMasts_ocrl7d.webp`}
           ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y4, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0000_ShipSailsFront_zys3iq.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954461/LadyVLineArt_0000_ShipSailsFront_zys3iq.webp`}
           ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y5, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0004_ShipSailsBack_qjb8tv.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954461/LadyVLineArt_0004_ShipSailsBack_qjb8tv.webp`}
           ></img>
         </motion.div>
         <motion.div className="box" style={{ y: y6, x: 0 }}>
           <img
             alt="LadyV"
-            src="https://res.cloudinary.com/josip-kuki/image/upload/v1620954461/LadyVLineArt_0005_LadyV_u2pn5w.png"
+            src={`https://res.cloudinary.com/josip-kuki/image/upload/${imageOptimisation}/v1620954461/LadyVLineArt_0005_LadyV_u2pn5w.webp`}
           ></img>
         </motion.div>
       </div>
