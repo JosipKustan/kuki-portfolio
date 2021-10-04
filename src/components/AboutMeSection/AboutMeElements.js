@@ -50,7 +50,7 @@ export const SectionTitle = styled.h1`
 export const AboutMeImage = styled.img`
   height: 330px;
   width: 200px;
-  background-image: url("https://res.cloudinary.com/josip-kuki/image/upload/c_scale,q_61,w_565/v1621066406/myFace_uefskw.webp");
+  background-image: url("https://res.cloudinary.com/josip-kuki/image/upload/c_scale,w_1295/v1633363883/IMG_20210524_171914_b4qnua.webp");
   background-size: cover;
 `;
 
