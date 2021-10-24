@@ -16,6 +16,8 @@ import {
 } from "./HeroSectionElements";
 import VideoDesktop from "../../videos/webreel_medium.mp4";
 import VideoMobile from "../../videos/WeebReelMobile.mp4";
+import useWindowDimensions from "../../useWindow";
+// const VideoDesktopLazy = React.lazy(()=>import("../../videos/webreel_medium.mp4"));
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -24,11 +26,16 @@ const HeroSection = () => {
     setHover(!hover);
   };
 
+  const {width}= useWindowDimensions();
+
   return (
     <HeroContainer id="home_page">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={VideoDesktop} type="video/mp4" />
-        <VideoBgMobile autoPlay loop muted src={VideoMobile} type="video/mp4" />
+        {
+          width<=768?
+          <VideoBgMobile autoPlay loop muted src={VideoMobile} type="video/mp4" />:
+          <VideoBg autoPlay loop muted src={VideoDesktop} type="video/mp4" />
+        }
       </HeroBg>
 
       <HeroContent>

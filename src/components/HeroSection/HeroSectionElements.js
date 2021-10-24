@@ -44,19 +44,13 @@ export const VideoBg = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 export const VideoBgMobile = styled.video`
-  display: none;
-  @media screen and (max-width: 768px) {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
 `;
 
 export const HeroContent = styled.div`
